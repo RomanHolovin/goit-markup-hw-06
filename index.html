@@ -28,12 +28,26 @@
             <li class="nav-link-list link"><a class="list-link-nav link" href="">Contacts</a></li>
           </ul>
         </nav>
+        <button class="mobile-open-btn" type="button" data-menu-open>
+          <svg class="mobile-open-icon" width="32" height="22">
+            <use href="./images/icons.svg#menu-hamburger"></use>
+          </svg>
+        </button>
         <address class="address">
           <ul class="nav-adress list">
-            <li><a class="list-address list link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="list-address list link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+            <li><a class="list-address link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="list-address link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
           </ul>
         </address>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mob-menu-container">
+          <button class="mob-close-btn" type="button" data-menu-close>
+            <svg class="mob-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-18dp"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <main>
@@ -92,17 +106,6 @@
 
       <!-- What are we doing -->
 
-      <section class="section-works">
-        <div class="container">
-          <h2 class="text-foot-two">What are we doing</h2>
-          <ul class="list-step">
-            <li class="list-step-works"><img src="./images/work/image3.jpg" alt="monitor" width="360" /></li>
-            <li class="list-step-works"><img src="./images/work/image2.jpg" alt="mobile soft" width="360" /></li>
-            <li class="list-step-works"><img src="./images/work/image1.jpg" alt="Operating System" width="360" /></li>
-          </ul>
-        </div>
-      </section>
-
       <!-- Our Team -->
 
       <section class="section-team">
@@ -110,7 +113,7 @@
           <h2 class="head-line">Our Team</h2>
           <ul class="list-team">
             <li class="img-team">
-              <img src="./images/team/mark.jpg" alt="Mark" width="264" />
+              <img srcset="./images/team/mark.jpg 1x, ./images/team/mark2x.jpg 2x" src="./images/team/mark.jpg" alt="Mark" width="264" />
               <div class="name-team-works">
                 <h3 class="list-snipper-name-team">Mark Guerrero</h3>
                 <p class="list-snippet-text-team">Product Designer</p>
@@ -147,7 +150,7 @@
               </div>
             </li>
             <li class="img-team">
-              <img src="./images/team/tom.jpg" alt="Tom" width="264" />
+              <img srcset="./images/team/tom.jpg 1x, ./images/team/tom2x.jpg 2x" src="./images/team/tom.jpg" alt="Tom" width="264" />
               <div class="name-team-works">
                 <h3 class="list-snipper-name-team">Tom Ford</h3>
                 <p class="list-snippet-text-team">Frontend Developer</p>
@@ -184,7 +187,7 @@
               </div>
             </li>
             <li class="img-team">
-              <img src="./images/team/camila.jpg" alt="Camila" width="264" />
+              <img srcset="./images/team/camila.jpg 1x, ./images/team/camila2x.jpg 2x" src="./images/team/camila.jpg" alt="Camila" width="264" />
               <div class="name-team-works">
                 <h3 class="list-snipper-name-team">Camila Garcia</h3>
                 <p class="list-snippet-text-team">Marketing</p>
@@ -221,7 +224,7 @@
               </div>
             </li>
             <li class="img-team">
-              <img src="./images/team/daniel.jpg" alt="Daniel" width="264" />
+              <img srcset="./images/team/daniel.jpg 1x, ./images/team/daniel2x.jpg 2x" src="./images/team/daniel.jpg" alt="Daniel" width="264" />
               <div class="name-team-works">
                 <h3 class="list-snipper-name-team">Daniel Wilson</h3>
                 <p class="list-snippet-text-team">UI Designer</p>
@@ -260,57 +263,8 @@
           </ul>
         </div>
       </section>
-      <section class="customers-section">
-        <div class="container">
-          <h2 class="customers-title">Customers</h2>
-          <ul class="customers-list list">
-            <li class="customers-list-item">
-              <a class="customers-list-link link" href="" target="_blank" rel="noopenar noreferrer" aria-label="Ya&Co logo icon">
-                <svg class="customers-icons" width="104" height="56" fill="currentColor">
-                  <use href="./images/icons.svg#icon-Logo"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="customers-list-item">
-              <a class="customers-list-link link" href="" target="_blank" rel="noopenar noreferrer" aria-label="Ya&Co logo icon">
-                <svg class="customers-icons" width="104" height="56" fill="currentColor">
-                  <use href="./images/icons.svg#icon-Logo1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="customers-list-item">
-              <a class="customers-list-link link" href="" target="_blank" rel="noopenar noreferrer" aria-label="Ya&Co logo icon">
-                <svg class="customers-icons" width="104" height="56" fill="currentColor">
-                  <use href="./images/icons.svg#icon-Logo2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="customers-list-item">
-              <a class="customers-list-link link" href="" target="_blank" rel="noopenar noreferrer" aria-label="Ya&Co logo icon">
-                <svg class="customers-icons" width="104" height="56" fill="currentColor">
-                  <use href="./images/icons.svg#icon-Vector"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="customers-list-item">
-              <a class="customers-list-link link" href="" target="_blank" rel="noopenar noreferrer" aria-label="Ya&Co logo icon">
-                <svg class="customers-icons" width="104" height="56" fill="currentColor">
-                  <use href="./images/icons.svg#icon-Logo3"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="customers-list-item">
-              <a class="customers-list-link link" href="" target="_blank" rel="noopenar noreferrer" aria-label="Ya&Co logo icon">
-                <svg class="customers-icons" width="104" height="56" fill="currentColor">
-                  <use href="./images/icons.svg#icon-Logo4"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-container">
           <a class="link-slogan-footer link" href="./index.html">Web<span class="nav-white">Studio</span></a>
@@ -365,7 +319,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
@@ -422,6 +376,21 @@
         </form>
       </div>
     </div>
+
+    <script src="./js/mob-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
+
+<picture>
+  <!-- Desktop screen -->
+
+  <source media="(min-width: 1200px)" srcset="./images/gallery/img-1_lg.jpg 1x, ./images/gallery/img-1_lg@2x.jpg 2x" type="image/jpg" />
+  <!-- Tablet screen -->
+
+  <source media="(min-width: 768px)" srcset="./images/gallery/img-1_md.jpg 1x, ./images/gallery/img-1_md@2x.jpg 2x" type="image/jpg" />
+  <!-- Mobile screen -->
+
+  <source media="(max-width: 767px)" srcset="./images/gallery/img-1_sm.jpg 1x, ./images/gallery/img-1_sm@2x.jpg 2x" type="image/jpg" />
+  <img class="card-img" src="./images/gallery/img-1_sm.jpg" alt="Ноутбук" width="450" height="294" loading="lazy" />
+</picture>

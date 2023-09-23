@@ -682,9 +682,10 @@ textarea:focus {
   
   .footer-container{
     flex-wrap: nowrap;
-   
-
-  }
+    }
+    .text-footer{
+      width: 264px;
+    }
   .footer-logo-container{
     display: block;
     margin-right: 120px;

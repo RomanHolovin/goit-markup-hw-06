@@ -665,8 +665,9 @@ textarea:focus {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
-    padding-left: 108px;
-    padding-right: 164px;
+    justify-content: center;
+    /* padding-left: 108px;
+    padding-right: 164px; */
   }  
   .fotter-social-desc{
     text-align: left;
@@ -681,10 +682,14 @@ textarea:focus {
   
   .footer-container{
     flex-wrap: nowrap;
+   
+
   }
   .footer-logo-container{
     display: block;
     margin-right: 120px;
+    
+    
   }
   .text-footer{
     font-size: 16px;
@@ -692,6 +697,9 @@ textarea:focus {
     max-width: 264px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+  }
+  .fotter-social-container{
+    margin-right: 80px;
   }
 }
 

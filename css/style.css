@@ -658,7 +658,9 @@ textarea:focus {
 }
 
 @media screen and (min-width:768px) {
-
+.footer-logo-container{
+  text-align: left;
+}
   .footer-container{
     flex-direction: row;
     flex-wrap: wrap;
@@ -666,8 +668,32 @@ textarea:focus {
     padding-left: 108px;
     padding-right: 164px;
   }  
+  .fotter-social-desc{
+    text-align: left;
+  }
+  .footer-form{
+    flex-direction: row;
+    gap: 24px;
+  }
 }
-
+@media screen and (min-width:1158px) {
+  
+  
+  .footer-container{
+    flex-wrap: nowrap;
+  }
+  .footer-logo-container{
+    display: block;
+    margin-right: 120px;
+  }
+  .text-footer{
+    font-size: 16px;
+    font-style: normal;
+    max-width: 264px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+}
 
 
 
